@@ -1,16 +1,24 @@
-console.log("hola desde script.js");
-// console.log(78);
-// let loquesea = 80;
-// console.log(loquesea);
+// 3.console.log
+console.log("Hello world");
+
+// 5.Variables
+console.log(70);
+let mi_masa = 70;
+console.log(mi_masa);
 
 // Peso (N) = Masa (kg) x Gravedad
+// Esta masa es constante en todos los planetas.
 
 // Gravedad:
 // Mercurio: 3,70 m/s(2)
 // Venus: 8,87 m/s(2)
 // Marte: 3,71 m/s(2)
+// Júpiter: 23,12 m/s(2)
+// Saturno: 8,96 m/s(2)
+// Urano: 8,69 m/s(2)
+// Neptuno: 11 m/s(2)
+// Plutón: 0,81 m/s(2)
 
-let mi_masa = 78;
 let Tierra = 1;
 let Marte = 3.71;
 let Jupiter = 23.12;
@@ -21,37 +29,54 @@ console.log(mi_masa * Jupiter);
 
 let equipo = 0.2;
 
-console.log(mi_masa - mi_masa * Jupiter * equipo);
+console.log(mi_masa - mi_masa * Tierra * equipo);
 
+// Tipos de variables (string, number)
 let intro = "Mi nombre es Marcos y en este planeta peso ";
+console.log(intro);
+console.log(typeof intro);
 
-let calculo = mi_masa * Marte;
-console.log(intro + calculo);
+let data = mi_masa - mi_masa * Tierra * equipo;
+console.log(typeof data);
 
-Tierra = 2;
-console.log(Tierra);
+console.log(intro, data);
 
+// Errores
+// let Tierra = 1.87;
+let Tierra2 = 1.87;
+console.log(mi_masa - mi_masa * Tierra2 * equipo);
+// Uncaught SyntaxError: Identifier 'Tierra' has already been declared
+
+//6.Operaciones &6 boleans & Condiciones if() {} else if() {} else {}
 let oxigeno = true;
-console.log(oxigeno);
 
 if (oxigeno) {
-  console.log("Puedo respirar");
+  console.log("Puedo respirar!");
 } else {
-  console.log("Ayudahahgsasgasg!");
+  console.log("Ayudagghghghg!");
 }
 
-if (equipo < 0.1) {
-  console.log("Todo ok");
+oxigeno = false;
+if (oxigeno || equipo) {
+  console.log("Puedo respirar y caminar!");
 } else {
-  console.log("problema");
+  console.log("Ayudagghghghg!");
+}
+
+if (equipo <= 0.2) {
+  console.log("Todo controlado");
+} else {
+  console.log("No levanto cabeza!");
 }
 
 console.log(typeof equipo);
-console.log(typeof oxigeno);
+console.log(typeof data);
 console.log(typeof intro);
-console.log(typeof calculo);
+console.log(typeof oxigeno);
 
-let listado = ["patata", "limón", 2, true, ["tomates"]];
+// 7. array + push() + pop()
+
+let listado = [];
 let listado2 = new Array();
 
 let listadoPlanetas = [
@@ -66,31 +91,72 @@ let listadoPlanetas = [
   "Pluton",
 ];
 
-console.log(listadoPlanetas);
 console.log(listadoPlanetas.length);
-console.log(listadoPlanetas[8], listadoPlanetas[4]);
-
-// Funciones
-
+console.log(listadoPlanetas);
 console.log(listadoPlanetas[0]);
-console.log(listadoPlanetas[1]);
 console.log(listadoPlanetas[2]);
-console.log(listadoPlanetas[3]);
 
-function nombrePlaneta(num) {
-  // palabra reservada de JS
-  // console.log(arguments);
-  console.log("nombre de planeta desde una función:", listadoPlanetas[num]);
+// 8.comentarios
+
+// 9.funciones
+console.log(
+  "Mi nombre es Marcos y estoy de visita en el planeta",
+  listadoPlanetas[0],
+);
+console.log(
+  "Mi nombre es Marcos y estoy de visita en el planeta",
+  listadoPlanetas[1],
+);
+console.log(
+  "Mi nombre es Marcos y estoy de visita en el planeta",
+  listadoPlanetas[2],
+);
+
+function reporte(i) {
+  console.log(
+    "Mi nombre es Marcos y estoy de visita en el planeta",
+    listadoPlanetas[i],
+  );
 }
 
-nombrePlaneta(1);
-nombrePlaneta(7);
+reporte(8);
 
-for (let i = 0; i < 8; i++) {
-  nombrePlaneta(i);
+// 10.bucle for
+
+for (let i = 0; i < 9; i++) {
+  //   console.log(i);
+  //   reporte(i);
 }
 
-// EJERCICIO
+function reporte2(i) {
+  if (i >= 0 && i < 9) {
+    console.log(
+      "Mi nombre es Marcos y estoy de visita en el planeta",
+      listadoPlanetas[i],
+    );
+  } else {
+    console.log("Usted ha abandonado el Sitema Solar");
+  }
+}
+
+for (let i = 0; i < 10; i++) {
+  console.log(i);
+  reporte2(i);
+}
+
+// 11.Ejercicio
+
+// let listadoPlanetasCompleto = [
+//   { Mercurio: 3.7 },
+//   { Venus: 8.87 },
+//   { Tierra: 1 },
+//   { Marte: 3.71 },
+//   { Jupiter: 23.12 },
+//   { Saturno: 8.96 },
+//   { Urano: 8.69 },
+//   { Neptuno: 11 },
+//   { Pluton: 0.81 },
+// ];
 
 // PARTE 1
 
