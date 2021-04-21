@@ -1,6 +1,6 @@
 # Introducción a JS
 
-## Intro:
+## Introducción:
 
 En este segundo `MEETUP` hacemos un pequeño viaje por nuestro Sistema Solar y los principios básicos de `Javascript`.
 
@@ -36,7 +36,7 @@ Para cerrar, subimos el nivel: dejamos desarrollado una pequeña aplicación par
 
 - Conocimientos básicos de HTML y CSS
 
-## 1.Introducción
+## 1.Javascript
 
 `JS`: uno de los lenguajes de programación más empleados en el desarrollo web, móvil, juegos, etc.
 
