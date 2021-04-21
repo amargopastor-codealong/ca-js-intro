@@ -237,7 +237,19 @@ let nuevo_planeta_button = document.createElement("button");
 nuevo_planeta_button.innerHTML = "Añadir!";
 root_element.append(nuevo_planeta_button);
 nuevo_planeta_button.addEventListener("click", function () {
-  // YOUR CODE GOES HERE
+  let nombre = nuevo_planeta_name.value;
+  let gravedad = nuevo_planeta_gravedad.value;
+  let peso = entradaTexto.value;
+  if (nombre.length && gravedad.length && peso.length) {
+    let ul = document.getElementById("results");
+    let li = document.createElement("li");
+    li.appendChild(
+      document.createTextNode(
+        `Su peso en ${nombre} es de ${gravedad * peso} newtons`,
+      ),
+    );
+    ul.appendChild(li);
+  }
 });
 
 // PARTE 3

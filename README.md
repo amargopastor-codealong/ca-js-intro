@@ -1,38 +1,46 @@
----
-title: JS intro
----
+# Introducción a JS
 
-# mu-js-intro
+## Intro:
 
-1. Objetivos:
+En este segundo `MEETUP` hacemos un pequeño viaje por nuestro Sistema Solar y los principios básicos de `Javascript`.
+
+Solamente necesitas conocimientos básicos de `HTML`, `CSS` y ganas de hacerte fuerte en uno de los lenguajes de programación más demandando por las comunidades de desarrollo a día de hoy.
+
+Para cerrar, subimos el nivel: dejamos desarrollado una pequeña aplicación para calcular tu peso en los distintos planetas del Sistema Solar. Todas las líneas de código adjuntan un comentario explicando qué está ocurriendo así como enlaces en la parte final con toda la documentación oficial de las herramientas empleadas.
+
+¡Hecha tu mismo vistazo al [resultado final](https://amargopastor.github.io/mu-js-intro/)!
+
+¿Te lo perdiste? ¡Puedes volver a verlo [aquí](https://www.youtube.com/watch?v=IdpQRAYD2Ao)!
+
+## Objetivos
 
 - Entender el lenguaje JS
 - Declarar variables
 - Expresiones lógicas
 - Introducción a funciones
 
-2. Contenidos:
+## Contenidos
 
 - Tipos de datos
 - Condicionales
 - Bucles
 - Funciones
 
-3. Materiales:
+## Materiales
 
 - Navegador
 - Editor de código
 - replit.com
 
-4. Requisitos:
+## Requisitos previos
 
-- conocimientos básicos de HTML y CSS
+- Conocimientos básicos de HTML y CSS
 
 ## 1.Introducción
 
-JS: uno de los lenguajes de programación más empleados en el desarrollo web, móvil, juegos, etc.
+`JS`: uno de los lenguajes de programación más empleados en el desarrollo web, móvil, juegos, etc.
 
-JavaScript (abreviado comúnmente JS) es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. Se define como orientado a objetos,​ basado en prototipos, imperativo, débilmente tipado y dinámico.
+`JavaScript` (abreviado comúnmente JS) es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. Se define como orientado a objetos,​ basado en prototipos, imperativo, débilmente tipado y dinámico.
 
 ## 2.Añadir el JS
 
@@ -46,11 +54,18 @@ JavaScript (abreviado comúnmente JS) es un lenguaje de programación interpreta
 </body>
 ```
 
-- Usar vincular un archivo `script.js` justo antes del cierre del cuerpo.
+- Vincular un archivo `script.js` justo antes del cierre del cuerpo:
 
-## 3.console.log()
+```html
+<body>
+  <h1>Hello world</h1>
+  <script src="./src/script.js"></script>
+</body>
+```
 
-La función console.log indica al programa que debe imprimir un texto por consola, tambien llamada salida de programa.
+## 3.Console.log()
+
+La función `console.log()` indica al programa que debe imprimir un texto por consola, también llamada salida de programa.
 
 ```js
 console.log("Hello world");
@@ -80,16 +95,16 @@ console.log(typeof intro);
 let data = mi_masa - mi_masa * Tierra * equipo;
 console.log(typeof data);
 
-console.log(intro, data);
+console.log(intro + data);
 
 // Errores
 let Tierra = 1.87;
-// let Tierra2 = 1.87;
+// let Tierra = 1.87;
 console.log(mi_masa - mi_masa * Tierra * equipo);
 // Uncaught SyntaxError: Identifier 'Tierra' has already been declared
 ```
 
-## 6.Expresiones lógicas &6 boleans & Condiciones if() {} else if() {} else {}
+## 6.Expresiones lógicas, boleans, if & else
 
 ```js
 let oxigeno = true;
@@ -106,9 +121,9 @@ console.log(typeof intro);
 console.log(typeof oxigeno);
 ```
 
-## 7.array + push() + pop()
+## 7.Array + push() + pop()
 
-Una lista o array es una secuencia ordenada de datos. Estos datos pueden ser de x tipos.
+Una lista o `array` es una secuencia ordenada de datos. Estos datos pueden ser de x tipos. El orden de los elementos en un array es importante.
 
 [Métodos de los arrays](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array#).
 
@@ -171,6 +186,7 @@ function reporte(i) {
   );
 }
 
+// Llamada a la función declarada:
 reporte(8);
 ```
 
