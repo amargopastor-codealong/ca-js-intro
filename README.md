@@ -240,3 +240,10 @@ for (let i = 0; i < 10; i++) {
 ### Tools
 
 - [checkVarNames](https://mothereff.in/js-variables)
+
+
+### Special thanks to
+
+- [CORE CODE SCHOOL](https://www.corecode.school/)
+- [Marc Pomar](https://github.com/boyander)
+- A todos los asistentes al directo con los que compartimos una tarde de código :)
