@@ -164,19 +164,51 @@ for (let i = 0; i < 10; i++) {
 let root_element = document.getElementById("root");
 console.log(root_element);
 
-//añadimos html
-let parrafo = document.createElement("p");
-parrafo.innerHTML = "¿Cual es su masa por gravedad en la Tierra?";
-root_element.append(parrafo);
+//añadimos question1 div
+let q1Div = document.createElement("div");
+root_element.append(q1Div);
+
+//añadimos question2 div
+let q2Div = document.createElement("div");
+root_element.append(q2Div);
+
+//añadimos div lista de resultados
+let resultsList = document.createElement("div");
+root_element.append(resultsList);
+
+let question1 = document.createElement("p");
+question1.innerHTML = "¿Cuál es su masa por gravedad en la Tierra?";
+q1Div.append(question1);
 
 //añadimos input
 let entradaTexto = document.createElement("input");
-root_element.append(entradaTexto);
+q1Div.append(entradaTexto);
 
 //añadimos botón
 let button = document.createElement("button");
 button.innerHTML = "Calcular";
-root_element.append(button);
+q1Div.append(button);
+
+//añadimos html
+let question2 = document.createElement("p");
+question2.innerHTML =
+  "¿Ha descubierto un nuevo planeta?¡Indique su nombre y la masa que registra!";
+q2Div.append(question2);
+
+//añadimos input
+let nuevo_planeta_name = document.createElement("input");
+nuevo_planeta_name.placeholder = "Escriba el nombre";
+q2Div.append(nuevo_planeta_name);
+
+//añadimos input
+let nuevo_planeta_gravedad = document.createElement("input");
+nuevo_planeta_gravedad.placeholder = "Indique la gravedad";
+q2Div.append(nuevo_planeta_gravedad);
+
+//añadimos botón
+let nuevo_planeta_button = document.createElement("button");
+nuevo_planeta_button.innerHTML = "Añadir!";
+q2Div.append(nuevo_planeta_button);
 
 //añadimos evento click y función
 button.addEventListener("click", function () {
@@ -184,14 +216,12 @@ button.addEventListener("click", function () {
   let peso = entradaTexto.value;
   // Comprobamos si existe valor
   if (peso.length) {
-    // Obtenemos el elemento sobre el que vamos a pintar
-    let ul = document.getElementById("results");
     // limpiamos elementos para no acumular los resultados tras cada "click":
-    ul.innerHTML = "";
+    resultsList.innerHTML = "";
     // Título de la sección:
     let innerP = document.createElement("p");
     innerP.innerHTML = "Resultados:";
-    ul.append(innerP);
+    resultsList.append(innerP);
     // iniciamos un contador para que nos ayude a salir del bucle while llegado el caso:
     let num = 0;
     // bucle while:
@@ -207,7 +237,7 @@ button.addEventListener("click", function () {
         ),
       );
       // Añadimos el elemento li generado al ul
-      ul.appendChild(li);
+      resultsList.appendChild(li);
       // incrementamos el contador num para, llegado el caso, poder salir del bucle:
       num++;
     }
@@ -215,53 +245,37 @@ button.addEventListener("click", function () {
 });
 
 // PARTE 2
-
-//añadimos html
-parrafo = document.createElement("p");
-parrafo.innerHTML =
-  "¿Ha descubierto un nuevo planeta?¡Indique su nombre y la masa que registra!";
-root_element.append(parrafo);
-
-//añadimos input
-let nuevo_planeta_name = document.createElement("input");
-nuevo_planeta_name.placeholder = "Escriba el nombre";
-root_element.append(nuevo_planeta_name);
-
-//añadimos input
-let nuevo_planeta_gravedad = document.createElement("input");
-nuevo_planeta_gravedad.placeholder = "Indique la gravedad";
-root_element.append(nuevo_planeta_gravedad);
-
-//añadimos botón
-let nuevo_planeta_button = document.createElement("button");
-nuevo_planeta_button.innerHTML = "Añadir!";
-root_element.append(nuevo_planeta_button);
 nuevo_planeta_button.addEventListener("click", function () {
   let nombre = nuevo_planeta_name.value;
   let gravedad = nuevo_planeta_gravedad.value;
   let peso = entradaTexto.value;
   if (nombre.length && gravedad.length && peso.length) {
-    let ul = document.getElementById("results");
     let li = document.createElement("li");
     li.appendChild(
       document.createTextNode(
         `Su peso en ${nombre} es de ${gravedad * peso} newtons`,
       ),
     );
-    ul.appendChild(li);
+    resultsList.appendChild(li);
   }
 });
 
 // PARTE 3
 
-parrafo = document.createElement("p");
+//añadimos doc div
+let docDiv = document.createElement("div");
+root_element.append(docDiv);
+
+let parrafo = document.createElement("p");
 parrafo.innerHTML = "Documentación:";
-document.getElementById("docs").append(parrafo);
+docDiv.append(parrafo);
+
+let docList = document.createElement("ul");
+docDiv.append(docList);
 
 for (let i = 0; i < doc.length; i++) {
   let key = Object.keys(doc[i]);
   let val = Object.values(doc[i]);
-  let ul = document.getElementById("docs");
   let li = document.createElement("li");
   let a = document.createElement("a");
   let linkText = document.createTextNode(key);
@@ -269,5 +283,5 @@ for (let i = 0; i < doc.length; i++) {
   a.setAttribute("href", val);
   a.setAttribute("target", "_blank");
   li.appendChild(a);
-  ul.appendChild(li);
+  docList.appendChild(li);
 }
