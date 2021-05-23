@@ -8,7 +8,7 @@ Solamente necesitas conocimientos básicos de `HTML`, `CSS` y ganas de hacerte f
 
 Para cerrar, subimos el nivel: dejamos desarrollado una pequeña aplicación para calcular tu peso en los distintos planetas del Sistema Solar. Todas las líneas de código adjuntan un comentario explicando qué está ocurriendo así como enlaces en la parte final con toda la documentación oficial de las herramientas empleadas.
 
-¡Hecha tu mismo vistazo al [resultado final](https://amargopastor.github.io/mu-js-intro/)!
+¡Hecha tu mismo vistazo al [resultado final](https://amargopastor.github.io/ca-js-intro/)!
 
 ¿Te lo perdiste? ¡Puedes volver a verlo [aquí](https://www.youtube.com/watch?v=IdpQRAYD2Ao)!
 
