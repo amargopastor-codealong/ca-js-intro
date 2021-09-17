@@ -2,11 +2,17 @@
 
 ## Introducción:
 
-En este segundo `MEETUP` hacemos un pequeño viaje por nuestro Sistema Solar y los principios básicos de `Javascript`.
+Hace un tiempo re-descubrí un concepto muy curioso de la física que mi cerebro había olvidado: el peso de una persona (y, por extensión, cualquier peso) no es más que el producto de tu masa (que es un valor constante) por la gravedad del planeta donde te encuentres. Es decir ,que tu masa siempre será la misma pero, dependiendo de en que punto del universo te encuentres, tu peso peude variar. Además la unidad de medida correcta para tu peso son los Newtowns, no el Kilogramo.
 
-Solamente necesitas conocimientos básicos de `HTML`, `CSS` y ganas de hacerte fuerte en uno de los lenguajes de programación más demandando por las comunidades de desarrollo a día de hoy.
+Algunos pensaréis "¡eso es más que evidente!". Otros quedarán maravillados por este dato. Y a un tercer grupo les dará fuertemente igual. En cualquiera de los casos a mi me resultó muy útil porque este hecho será el [Macguffin](https://es.wikipedia.org/wiki/Macguffin) que guiará la introducción a JS que me había propuesto redactar.
 
 Para cerrar, subimos el nivel: dejamos desarrollado una pequeña aplicación para calcular tu peso en los distintos planetas del Sistema Solar. Todas las líneas de código adjuntan un comentario explicando qué está ocurriendo así como enlaces en la parte final con toda la documentación oficial de las herramientas empleadas.
+
+Asíque toma asiento y prepárate para un pequeño viaje por nuestro Sistema Solar y los principios básicos de `Javascript`.
+
+## Get ready!
+
+Solamente necesitas conocimientos básicos de `HTML`, `CSS` y ganas de hacerte fuerte en [uno de los lenguajes de programación más demandando](https://2020.stateofjs.com/en-US/demographics/) por las comunidades de desarrollo a día de hoy.
 
 ¡Hecha tu mismo vistazo al [resultado final](https://amargopastor.github.io/ca-js-intro/)!
 
@@ -38,11 +44,17 @@ Para cerrar, subimos el nivel: dejamos desarrollado una pequeña aplicación par
 
 ## 1.Javascript
 
-`JS`: uno de los lenguajes de programación más empleados en el desarrollo web, móvil, juegos, etc.
+`JavaScript` es uno de los [lenguajes de programación más empleados](https://2020.stateofjs.com/en-us/demographics/) en el desarrollo web, móvil, juegos, etc. Abreviado comúnmente como JS se trata de un lenguaje de programación interpretado, dialecto del estándar ECMAScript. Se define como orientado a objetos,​ basado en prototipos, imperativo, débilmente tipado y dinámico.
 
-`JavaScript` (abreviado comúnmente JS) es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. Se define como orientado a objetos,​ basado en prototipos, imperativo, débilmente tipado y dinámico.
+¿Qué significa todo esto? ¡Pues muchas cosas! Pero no te preocupes. Esta es sólo una definición estándar que iremos entendiendo poco a poco. Lo importante viene ahora.
+
+Sobre JS hay mucho que leer y mucho que aprender, pero es ideal si estás empezando en el mundo de la programación por una sencilla razón: se trata de un `lenguaje de alto nivel`. Es decir, su sintaxis es muy similar a la que usamos las personas por lo que en muchas ocasiones tendrás la sensación de estar escribiendo comandos en inglés para comunicarte con tu ordenador.
+
+Aprovecho para recomendarte que, para mantenerte al día de todo lo que se cuece en el mundo del JS, te dejes caer de vez en cuando por [stateofjs](https://2020.stateofjs.com/en-US/) y [ecma-international.org](https://www.ecma-international.org/publications-and-standards/standards/ecma-262/).
 
 ## 2.Añadir el JS
+
+Añadir JS a tu archivo de trabajo es fundamental. Supongamos, por el bien de este caso, vamos a ejecutar un archivo html en nuestro navegador que se acabará conviertiendo en una novísima página web con un conversor de peso espacial.
 
 - Incluir JS en HTML:
 
@@ -240,7 +252,6 @@ for (let i = 0; i < 10; i++) {
 ### Tools
 
 - [checkVarNames](https://mothereff.in/js-variables)
-
 
 ### Special thanks to
 
