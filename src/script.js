@@ -8,16 +8,20 @@ console.log(root_element);
 let q1Div = document.createElement("div");
 root_element.append(q1Div);
 
+//añadimos div lista de resultados
+let resultsList = document.createElement("ul");
+root_element.append(resultsList);
+
 //añadimos question2 div
 let q2Div = document.createElement("div");
 root_element.append(q2Div);
 
 //añadimos div lista de resultados
-let resultsList = document.createElement("div");
-root_element.append(resultsList);
+let resultsList_2 = document.createElement("ul");
+root_element.append(resultsList_2);
 
 let question1 = document.createElement("p");
-question1.innerHTML = "¿Cuál es su masa por gravedad en la Tierra?";
+question1.innerHTML = "¿Cuál es mi masa por gravedad en la Tierra?";
 q1Div.append(question1);
 
 //añadimos input
@@ -32,7 +36,7 @@ q1Div.append(button);
 //añadimos html
 let question2 = document.createElement("p");
 question2.innerHTML =
-  "¿Ha descubierto un nuevo planeta?¡Indique su nombre y la masa que registra!";
+  "¿Has descubierto un nuevo planeta?Indica su nombre y la masa que registra!";
 q2Div.append(question2);
 
 //añadimos input
@@ -58,22 +62,19 @@ button.addEventListener("click", function () {
   if (peso.length) {
     // limpiamos elementos para no acumular los resultados tras cada "click":
     resultsList.innerHTML = "";
-    // Título de la sección:
-    let innerP = document.createElement("p");
-    innerP.innerHTML = "Resultados:";
-    resultsList.append(innerP);
     // iniciamos un contador para que nos ayude a salir del bucle while llegado el caso:
     let num = 0;
     // bucle while:
-    while (num < listadoPlanetas.length) {
+    while (num < listadoPlanetasCompleto.length) {
       let li = document.createElement("li");
       // En cada vuelta del bucle extraemos el nombre del planeta correspondiente desde el archivo listadoPlanetasCompleto.js:
       let planeta = Object.keys(listadoPlanetasCompleto[num]);
       // Y extraemos el value del planeta:
       let gravedad = listadoPlanetasCompleto[num][planeta];
+      let calc_round = Math.round((gravedad * peso) * 100) / 100
       li.appendChild(
         document.createTextNode(
-          `Tu peso en ${planeta} es de ${gravedad * peso} newtons`,
+          `Tu peso en ${planeta} es de ${calc_round} newtons`,
         ),
       );
       // Añadimos el elemento li generado al ul
@@ -91,13 +92,15 @@ nuevo_planeta_button.addEventListener("click", function () {
   let gravedad = nuevo_planeta_gravedad.value;
   let peso = entradaTexto.value;
   if (nombre.length && gravedad.length && peso.length) {
+    resultsList_2.innerHTML = "";
     let li = document.createElement("li");
+    let calc_round = Math.round((gravedad * peso) * 100) / 100
     li.appendChild(
       document.createTextNode(
-        `Tu peso en ${nombre} es de ${gravedad * peso} newtons`,
+        `Tu peso en ${nombre} es de ${calc_round} newtons`,
       ),
     );
-    resultsList.appendChild(li);
+    resultsList_2.appendChild(li);
   }
 });
 
