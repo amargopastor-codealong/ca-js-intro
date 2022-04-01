@@ -1,47 +1,16 @@
 ## Table of Contents
 
-1. [Get ready!]()
-1. [1.Javascript]()
-1. [2.Añadir JS]()
-1. [3.Console.log()]()
-1. [4.Herramientas de desarrollo]()
-1. [5.Variables]()
-1. [6.Expresiones lógicas, boleans, if & else]()
-1. [7.Array + push() + pop()]()
-1. [8.Comentarios]()
-1. [9.Funciones]()
-1. [10.Bucle for]()
-1. [Documentación]()
-
-## Get ready!
-
-Solamente necesitas conocimientos básicos de `HTML`, `CSS` y ganas de hacerte fuerte en [uno de los lenguajes de programación más demandando](https://2021.stateofjs.com/en-US/demographics/#yearly_salary) por las comunidades de desarrollo a día de hoy.
-
-¡Hecha tu mismo vistazo al [resultado final](https://amargopastor-code-along.github.io/ca-js-intro/) y no dejes de visitar el [repositorio](https://github.com/amargopastor-code-along/ca-js-intro) para poder descargar el código fuente!
-
-## Objetivos
-
-- Entender el lenguaje JS
-- Declarar variables
-- Expresiones lógicas
-- Introducción a funciones
-
-## Contenidos
-
-- Tipos de datos
-- Condicionales
-- Bucles
-- Funciones
-
-## Materiales
-
-- Navegador
-- Editor de código
-- replit.com
-
-## Requisitos previos
-
-- Conocimientos básicos de HTML y CSS
+1. [1.Javascript](#1javascript)
+1. [2.Añadir JS](#2añadir-js)
+1. [3.Console.log()](#3consolelog)
+1. [4.Herramientas de desarrollo](4herramientas-de-desarrollo)
+1. [5.Variables](#5variables)
+1. [6.Expresiones lógicas, boleans, if & else](#6expresiones-lógicas-boleans-if--else)
+1. [7.Array + push() + pop()](#7array--push--pop)
+1. [8.Comentarios](#8comentarios)
+1. [9.Funciones](#9funciones)
+1. [10.Bucle for](#10bucle-for)
+1. [Documentación](#documentación)
 
 ## 1.Javascript
 

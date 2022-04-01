@@ -27,3 +27,33 @@ Algunos pensaréis _"¡eso es más que evidente!"_. Otros quedarán maravillados
 Para cerrar, subimos el nivel: dejamos desarrollado una pequeña `aplicación para calcular tu peso en los distintos planetas del Sistema Solar`. Todas las líneas de código adjuntan un comentario explicando qué está ocurriendo así como enlaces en la parte final con toda la documentación oficial de las herramientas empleadas.
 
 Asíque toma asiento y prepárate para un pequeño viaje por nuestro Sistema Solar y los principios básicos de `Javascript`.
+
+## Get ready!
+
+Solamente necesitas conocimientos básicos de `HTML`, `CSS` y ganas de hacerte fuerte en [uno de los lenguajes de programación más demandando](https://2021.stateofjs.com/en-US/demographics/#yearly_salary) por las comunidades de desarrollo a día de hoy.
+
+Hecha tu mismo vistazo al [resultado final](https://amargopastor-code-along.github.io/ca-js-intro/). Puedes seguir paso por paso el desarrollo desde el [blog](https://github.com/amargopastor-code-along/ca-js-intro/tree/main/blog).
+
+## Objetivos
+
+- Entender el lenguaje JS
+- Declarar variables
+- Expresiones lógicas
+- Introducción a funciones
+
+## Contenidos
+
+- Tipos de datos
+- Condicionales
+- Bucles
+- Funciones
+
+## Materiales
+
+- Navegador
+- Editor de código
+- replit.com
+
+## Requisitos previos
+
+- Conocimientos básicos de HTML y CSS
