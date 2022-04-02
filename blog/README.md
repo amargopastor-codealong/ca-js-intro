@@ -20,6 +20,22 @@
 
 Sobre JS hay mucho que leer y mucho que aprender, pero es ideal si estás empezando en el mundo de la programación por una sencilla razón: se trata de un `lenguaje de alto nivel`. Es decir, su sintaxis es muy similar a la que usamos las personas por lo que en muchas ocasiones tendrás la sensación de estar escribiendo comandos en inglés para comunicarte con tu ordenador.
 
+`La programación es un proceso` de que diseña, ordena e implementa un algoritmo a través de un lenguaje de programación.
+
+`Algoritmo`: Secuencia de pasos ordenados que solucionan un problema.
+
+Áreas de programación:
+
+- Desarrollo Web
+- Videojuegos
+- Inteligencia Artificial
+- Desarrollo Móvil
+- Big Data
+- Robótica
+- (...)
+
+`Lenguaje de programamción`: Sistema estructurado de comunicación, conformado por conjunto de palabras claves, símbolos y reglas sintácticas y semánticas que permiten un entendimiento entre el programador y la máquina.
+
 Aprovecho para recomendarte que, para mantenerte al día de todo lo que se cuece en el mundo del JS, te dejes caer de vez en cuando por [stateofjs](https://2021.stateofjs.com/en-US/) y [ecma-international.org](https://www.ecma-international.org/publications-and-standards/standards/ecma-262/).
 
 ## 2.Añadir JS

@@ -1,5 +1,9 @@
 # 🚀 Intro JS
 
+[TRY HERE! 🔥](https://amargopastor-code-along.github.io/ca-js-intro/)
+
+![JS](https://img.shields.io/badge/-Javascript-61DAFB?logo=javascript&logoColor=white&style=flat-square)
+
 ## Introducción
 
 Hace un tiempo re-descubrí un concepto muy curioso de la física que mi cerebro había olvidado: el peso de una persona (y, por extensión, cualquier peso) no es más que el producto de tu masa (que es un valor constante) por la gravedad del planeta donde te encuentres. Es decir, que tu masa siempre será la misma pero, `dependiendo de en que punto del universo te encuentres, tu peso puede variar`. Además: la unidad de medida correcta para tu peso son los Newtowns, no el Kilogramo.
