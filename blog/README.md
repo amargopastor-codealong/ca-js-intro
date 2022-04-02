@@ -1,15 +1,15 @@
 ## Table of Contents
 
-1. [1.Javascript](#1javascript)
-1. [2.Añadir JS](#2añadir-js)
-1. [3.Console.log()](#3consolelog)
-1. [4.Herramientas de desarrollo](4herramientas-de-desarrollo)
-1. [5.Variables](#5variables)
-1. [6.Expresiones lógicas, boleans, if & else](#6expresiones-lógicas-boleans-if--else)
-1. [7.Array + push() + pop()](#7array--push--pop)
-1. [8.Comentarios](#8comentarios)
-1. [9.Funciones](#9funciones)
-1. [10.Bucle for](#10bucle-for)
+1. [Javascript](#1javascript)
+1. [Añadir JS](#2añadir-js)
+1. [Console.log()](#3consolelog)
+1. [Herramientas de desarrollo](4herramientas-de-desarrollo)
+1. [Variables](#5variables)
+1. [Expresiones lógicas, boleans, if & else](#6expresiones-lógicas-boleans-if--else)
+1. [Array + push() + pop()](#7array--push--pop)
+1. [Comentarios](#8comentarios)
+1. [Funciones](#9funciones)
+1. [Bucle for](#10bucle-for)
 1. [Documentación](#documentación)
 
 ## 1.Javascript
