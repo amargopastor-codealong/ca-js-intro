@@ -1,3 +1,18 @@
+---
+title: Introducción a JavaScript
+author: Marcos Iñigo (@amargopastor)
+---
+
+# Intro JS
+
+Sea cual sea tu rama profesional, en este artículo aprenderás los principios básicos de JS.
+
+Repasaremos los tipos de variables, las estructuras básicas propias de JS y podrás acceder a un [ejemplo final de código avanzado](https://amargopastor-code-along.github.io/ca-js-intro/)
+
+Para todo ello sólo necesitarás conocimientos básicos de `HTML&CSS`, un editor de código y una cuenta en [www.github.com](https://github.com/).
+
+¡Vamos allá!
+
 ## Table of Contents
 
 1. [Javascript](#1javascript)
