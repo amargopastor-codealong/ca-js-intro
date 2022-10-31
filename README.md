@@ -1,6 +1,6 @@
 # 🚀 Intro JS
 
-[TRY HERE! 🔥](https://amargopastor-code-along.github.io/ca-js-intro/)
+[TRY HERE! 🔥](https://amargopastor-codealong.github.io/ca-js-intro/)
 
 ![JS](https://img.shields.io/badge/-Javascript-61DAFB?logo=javascript&logoColor=white&style=flat-square)
 
